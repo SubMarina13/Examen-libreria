@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+form, .seccion {
+    background: rgb(220, 251, 255);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #388cd1;
+    color: white;
+    border: black;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resultado input {
+    background-color: #eee;
+    border: none;
+    font-weight: bold;
+}

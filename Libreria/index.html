@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de la tienda de libros</h1>
+    <form id="formRegistro">
+        <label>Nombre:
+            <input type="text" id="nombre" required>
+        </label>
+
+        <label>Apellidos:
+            <input type="text" id="apellidos" required>
+        </label>
+
+        <label>Teléfono:
+            <input type="text" id="telefono"  required>
+        </label>
+
+        <label>Contraseña (mínimo 8 caracteres):
+            <input type="password" id="password" minlength="8" required>
+        </label>
+
+        <label>Áreas de interés:
+            <select id="interes" required>
+                <option value="">Selecciona</option>
+                <option value="programacion">Programación</option>
+                <option value="diseño">Diseño</option>
+                <option value="ciencias">Ciencias</option>
+            </select>
+        </label>
+
+        <label>Fecha de nacimiento:
+            <input type="date" id="nacimiento" required>
+        </label>
+
+        <label>
+            <input type="checkbox" id="terminos" required> Acepto los términos de protección de datos
+        </label>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+    <div id="seccionLibros" class="seccion" style="display:none;">
+        <h2>Seleccionar libro para comprar</h2>
+
+        <label>Nombre del libro:
+            <select id="libro">
+                <option value="Javascript Avanzado">JavaScript Avanzado</option>
+                <option value="Diseño UX">Diseño UX</option>
+                <option value="Física Cuántica">Física Cuántica</option>
+            </select>
+        </label>
+
+        <label>Precio (€):
+            <input type="number" id="precio" step="0.01" min="0" required>
+        </label>
+
+        <label>IVA:
+            <select id="iva">
+                <option value="0.10">Reducido (10%)</option>
+                <option value="0.21">Normal (21%)</option>
+            </select>
+        </label>
+
+        <button type="button" onclick="calcularTotal()">Calcular</button>
+
+        <div class="resultado">
+            Total con IVA: <input type="text" id="resultado" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
