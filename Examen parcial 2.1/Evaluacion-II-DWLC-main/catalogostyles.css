@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #0c0c0c;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #eeeef8f1;
+    color: rgb(26, 24, 24);
+    padding: 0;
+    text-align: center;
+}
+
+.divheader {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-nvidia {
+    width: 180px;
+    height: auto;
+    align-items: flex-start;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.producto {
+    background: rgb(240, 240, 240);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: rgb(44, 151, 107);
+    font-size: 1.1em;
+}
